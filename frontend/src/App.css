@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&family=Spectral:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  --type-first: Helvetica, Arial, sans-serif;
+  --type-second: 'Spectral', georgia;
+  --standard-black: #333;
+  --standard-white: #eee;
+  --standard-yellow-1: #fb1;
+  --standard-yellow-2: #fea;
+  --standard-error: #f31;
+  color: var(--standard-black);
+  font-family: var(--type-first);
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--standard-black);
+}
+
+.title {
+  font-family: var(--type-second);
+  font-size: 3rem;
+  margin: 1rem 0;
+  position: relative;
+}
+
+.initialAnimation {
+  animation: initialAnimation 300ms forwards;
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+@keyframes initialAnimation {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}

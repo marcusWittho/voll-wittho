@@ -1,0 +1,22 @@
+.header {
+  background-color: var(--standard-white);
+  border-bottom: 2px solid lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 9vh;
+}
+
+.user {
+  display: flex;
+  margin-right: 4rem;
+}
+
+.logo {
+  margin-left: 4rem;
+}
+
+.username {
+  margin: 0 2rem;
+}
